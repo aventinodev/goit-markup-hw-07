@@ -1,0 +1,27 @@
+.header-contact-list {
+  @extend %flex;
+  list-style: none;
+}
+
+.header-contact-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact-list__link {
+  @extend %flex;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primaryColor;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+.header-contact-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
