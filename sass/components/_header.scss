@@ -1,8 +1,8 @@
 .header {
-  border-bottom: 1px solid $borderColor-header;
+  border-bottom: 1px solid $borderColorHeader;
 }
 
-.container {
+.header .container {
   @extend %flex;
   width: 1200px;
   margin: 0 auto;
