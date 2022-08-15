@@ -1,5 +1,5 @@
 .features {
-  @extend %container;
+  @extend %container, %section;
 }
 
 .features__title {
@@ -15,12 +15,12 @@
     margin-right: 30px;
   }
 }
-.features-icon__icon {
-  @extend %flexIcon;
+.features-icon {
+  @extend %flex;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: backgroundColorAdd;
+  background-color: $backgroundColorAdd;
   border-radius: 4px;
 }
 .features__subtitle {
