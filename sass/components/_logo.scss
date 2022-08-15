@@ -8,7 +8,7 @@
   line-height: 1.19;
   color: $accentColor;
 }
-.logo__header {
+.logo--header {
   color: $blackColor;
 }
 
@@ -18,7 +18,9 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
-.logo__footer {
+.logo--footer {
   color: $whiteColor;
+}
+.footer .logo {
+  margin: 0 0 20px;
 }
