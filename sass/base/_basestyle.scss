@@ -1,0 +1,26 @@
+body {
+  font-family: 'roboto', sans-serif;
+  color: var(--title-text-color);
+  background-color: var(--white-background-color);
+  /*letter-spacing в макеті зустрічається три значення цієї 
+  властивості. Цей самий розповсюджений, тому я його внесла в body*/
+  letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
