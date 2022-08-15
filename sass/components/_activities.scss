@@ -1,6 +1,9 @@
 .activities {
-  @extend %section;
+  @extend %container;
   padding-top: 0;
+}
+.activities__title {
+  @extend %title;
 }
 .activities-list {
   display: flex;

@@ -1,16 +1,16 @@
 .features {
-  @extend %container, %section;
+  @extend %container;
 }
 
 .features__title {
   @extend %visuallyHidden;
 }
 .features-list {
-  @extend %flex;
+  display: flex;
+  justify-content: center;
 }
 .features-list__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-
   &:not(:last-child) {
     margin-right: 30px;
   }
