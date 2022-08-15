@@ -1,12 +1,9 @@
-%flex {
-  display: flex;
-  align-items: center;
+%section {
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-%flexIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 %container {
   width: 1200px;
   margin: 0 auto;
@@ -14,8 +11,16 @@
   padding-right: 15px;
 }
 
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 %btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   border: none;
 
