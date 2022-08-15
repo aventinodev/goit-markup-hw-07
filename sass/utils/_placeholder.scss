@@ -10,13 +10,11 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
 %flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 %btn {
   display: flex;
   justify-content: center;
@@ -41,4 +39,10 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+%title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }

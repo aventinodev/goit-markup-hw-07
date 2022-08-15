@@ -6,25 +6,26 @@ $accentСolorBtn: #188ce8;
 $whiteColor: #ffffff;
 $blackColor: #000000;
 
-$transparent-white-text-color: rgba(255, 255, 255, 0.6);
-$transparent-grey-text-color: rgba(117, 117, 117, 0.5);
+$transparentWhiteColor: rgba(255, 255, 255, 0.6);
+$transparentGreyColor: rgba(117, 117, 117, 0.5);
 
 //   hero,footer
 $backgroundColor: #2f303a;
 // сделать локальним
-$white-background-color: #ffffff;
+$whiteBackgroundColor: #ffffff;
 //   hover-for-hero-btn
 
 //   team
 $backgroundColorAdd: #f5f4fa;
-$borderColor-header: #ececec;
-$border-color-projects: #eeeeee;
+$borderColorHeader: #ececec;
+$borderColorProjects: #eeeeee;
 
 $iconColor: #afb1b8;
 
 $iconBackground: rgba(255, 255, 255, 0.1);
-$border-color: rgba(255, 255, 255, 0.3);
+$borderColor: rgba(255, 255, 255, 0.3);
 
-$border-input: rgba(33, 33, 33, 0.2);
+$borderColorInput: rgba(33, 33, 33, 0.2);
 
-$timing-funcshion: cubic-bezier(0.4, 0, 0.2, 1);
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$animationModal: 500ms cubic-bezier(0.4, 0, 0.2, 1);
