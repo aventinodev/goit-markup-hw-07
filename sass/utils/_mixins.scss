@@ -1,5 +1,17 @@
-@mixin button($clr, $bdr, $shdw) {
-  background-color: $clr;
-  border-color: $bdr;
-  box-shadow: $shdw;
+// @mixin button($bgclr, $bdr, $shdw) {
+//   $bgclr background-color;
+//   $bdr border-color;
+//   ;shdw box-shadow ;
+// }
+
+@mixin font($fs: false, $fw: false, $lh: false) {
+  @if $fs {
+    font-size: $fs;
+  }
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $lh {
+    line-height: $lh / $fs;
+  }
 }

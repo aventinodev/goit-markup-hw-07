@@ -20,27 +20,36 @@ a {
   cursor: pointer;
 }
 
-body {
-  font-family: "roboto", sans-serif;
-  color: #212121;
-  background-color: #ffffff;
-  /*letter-spacing в макеті зустрічається три значення цієї 
-  властивості. Цей самий розповсюджений, тому я його внесла в body*/
-  letter-spacing: 0.03em;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.btn-submit {
-  min-width: 200px;
-  height: 50px;
-  background-color: #2196f3;
+body {
+  font-family: "roboto", sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  bacground-color: #2196f3;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  height: 50px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -610,9 +619,6 @@ img {
 .btn-submit {
   min-width: 200px;
   height: 50px;
-  background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
