@@ -45,5 +45,10 @@
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-  text-transform: uppercase;
+}
+%headerList {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color $animation;
 }
