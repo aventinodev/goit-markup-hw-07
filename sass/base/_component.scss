@@ -1,0 +1,86 @@
+body {
+  font-family: 'roboto', sans-serif;
+  color: $titleColor;
+  background-color: $whiteBackgroundColor;
+  /*letter-spacing в макеті зустрічається три значення цієї 
+  властивості. Цей самий розповсюджений, тому я його внесла в body*/
+  letter-spacing: 0.03em;
+}
+
+.section {
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.list {
+  list-style: none;
+}
+.card {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $accentColor;
+}
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+// /* додає спільні (повторювані) стилі для всіх кнопок
+// див. .hero-btn .filter-btn
+//  */
+.btn {
+  display: flex;
+  text-align: center;
+
+  border-radius: 4px;
+  border: none;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+.footer-wrapper__appeal {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $whiteColor;
+}
+.footer-wrapper {
+  margin-right: auto;
+}
