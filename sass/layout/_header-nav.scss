@@ -1,6 +1,4 @@
 .header-nav {
-  margin-left: 0;
-  margin-right: auto;
 }
 
 .header-nav-list {
@@ -12,35 +10,25 @@
   margin-right: 50px;
 }
 .header-nav-list__link {
-  text-decoration: none;
+  @extend %headerList;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
-}
-.header-nav-list__link,
-.header-contact-list__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color $animation;
 
   &:hover,
   &:focus {
     color: $accentColor;
   }
-
-  &:active {
+  .header-nav-list__link.current {
     color: $accentColor;
+    cursor: pointer;
+    position: relative;
   }
 }
-.header-nav-list__current {
-  color: $accentColor;
-  cursor: pointer;
-  position: relative;
-}
-.header-nav-list__current::after {
+.header-nav-list__link.current::after {
   content: '';
   position: absolute;
   bottom: 0;
