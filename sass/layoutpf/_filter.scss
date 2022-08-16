@@ -2,36 +2,48 @@
   display: flex;
   justify-content: center;
 }
-.filter-item {
+.filter-list__item {
   margin-bottom: 50px;
 }
-.filter-item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
-.filter-btn {
+.btn {
+  display: flex;
+  text-align: center;
+
+  border-radius: 4px;
+  border: none;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+.filter__btn {
   min-width: 73px;
   padding: 6px 22px;
+  // @include font()
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  background-color: var(--add-background-color);
+  color: $titleColor;
+  background-color: $backgroundColorAdd;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.08),
     0px 0px 0px rgba(0, 0, 0, 0.12);
 
-  transition: background-color 250ms var(--timing-funcshion), color 250ms var(--timing-funcshion),
-    box-shadow 250ms var(--timing-funcshion);
+  transition: background-color $animation, color $animation, box-shadow 250ms $animation;
 }
-.filter-btn:hover,
-.filter-btn:focus {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+.filter__btn:hover,
+.filter__btn:focus {
+  color: $whiteColor;
+  background-color: $accentColor;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .current-btn {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+  color: $whiteColor;
+  background-color: $accentColor;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
