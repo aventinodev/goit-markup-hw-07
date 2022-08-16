@@ -148,7 +148,7 @@
   transition: fill $animation;
 }
 .policy-check:checked + .policy-label span {
-  @include button($accentColor, $accentColor);
+  // @include button($accentColor, $accentColor);
 }
 .policy-check:hover + .policy-label span,
 .policy-check:focus + .policy-label span {

@@ -1,9 +1,5 @@
 .team {
   background-color: $backgroundColorAdd;
-  @extend %section;
-}
-.team .container {
-  @extend %container;
 }
 .team__title {
   @extend %title;
