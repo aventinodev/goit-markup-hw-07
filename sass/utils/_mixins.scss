@@ -4,7 +4,27 @@
 //   ;shdw box-shadow ;
 // }
 
-@mixin font($fs: false, $fw: false, $lh: false) {
+// @mixin flex($dsp, $ai: , $jc: false) {
+//   @if $dsp {
+//     display: $dsp;
+//   }
+//   @if $ai {
+//     align-items: $ai;
+//   }
+//   @if $jc {
+//     justify-content: $jc;
+//   }
+// }
+// @mixin square($size, $radius: 0)
+//   width: $size
+//   height: $size
+
+//   @if $radius != 0
+//     border-radius: $radius
+// .avatar
+//   @include square(100px, $radius: 4px)
+
+@mixin font($fs: false, $fw: 400, $lh: false, $ls: 0.03em) {
   @if $fs {
     font-size: $fs;
   }
@@ -13,5 +33,8 @@
   }
   @if $lh {
     line-height: $lh / $fs;
+  }
+  @if $ls {
+    letter-spacing: $ls;
   }
 }

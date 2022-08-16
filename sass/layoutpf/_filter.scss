@@ -8,29 +8,19 @@
 .filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
-.btn {
-  display: flex;
-  text-align: center;
 
-  border-radius: 4px;
-  border: none;
-
-  font-family: inherit;
-  font-size: 16px;
-
-  cursor: pointer;
-}
 .filter__btn {
   min-width: 73px;
+  height: auto;
   padding: 6px 22px;
-  // @include font()
-  font-weight: 500;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
+
+  @include font(16px, 500, 26px, 0.03em);
+  // font-weight: 500;
+  // line-height: 1.63;
+  // letter-spacing: 0.03em;
   color: $titleColor;
   background-color: $backgroundColorAdd;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.08),
-    0px 0px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: $boxShadowFltr;
 
   transition: background-color $animation, color $animation, box-shadow 250ms $animation;
 }
@@ -38,12 +28,11 @@
 .filter__btn:focus {
   color: $whiteColor;
   background-color: $accentColor;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: $boxShadowFltr;
+  transition: background-color $animation, color $animation, box-shadow 250ms $animation;
 }
 .current-btn {
   color: $whiteColor;
   background-color: $accentColor;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: $boxShadowFltr;
 }

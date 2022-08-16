@@ -20,20 +20,22 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  bacground-color: $accentColor;
-  font-family: inherit;
-  font-size: 16px;
-  cursor: pointer;
 
+  transition: background-color $animation;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-main {
   min-width: 200px;
   height: 50px;
 
+  color: $whiteColor;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
-  color: $whiteColor;
-  transition: background-color $animation;
+  background-color: $accentColor;
+  box-shadow: $boxShadowButton;
 }
