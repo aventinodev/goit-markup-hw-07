@@ -1,8 +1,10 @@
 @import './utils/variables';
 @import './base/reset';
 @import './base/component';
+@import './utils/mixins';
 @import './utils/placeholder';
 @import './layout/logo';
+@import './layout/social';
 
 @import './layout/header';
 @import './layout/header-nav';
@@ -11,13 +13,12 @@
 @import './layout/hero';
 @import './layout/features';
 @import './layout/activities';
-@import './layout/social';
 @import './layout/team';
 @import './layout/clients';
 
 @import './layout/footer';
 @import './layout/footer-address';
 @import './layout/footer-join';
-@import './layout/footer-mailing';
+@import './layout/footer-form';
 
 @import './layout/modal';

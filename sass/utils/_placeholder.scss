@@ -15,6 +15,22 @@
   align-items: center;
   justify-content: center;
 }
+%soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+%soc-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $whiteBackgroundColor;
+
+  transition: background-color $animation;
+}
 %btn {
   display: flex;
   justify-content: center;

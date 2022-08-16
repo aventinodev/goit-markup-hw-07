@@ -1,5 +1,5 @@
-// @mixin button($color, $border, $shadow) {
-//   background-color: $color;
-//   border-color: $border;
-//   box-shadow: $shadow;
-// }
+@mixin button($clr, $bdr, $shdw) {
+  background-color: $clr;
+  border-color: $bdr;
+  box-shadow: $shdw;
+}
