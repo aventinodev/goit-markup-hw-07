@@ -1,11 +1,5 @@
-.clients {
-  @extend %section, %section;
-}
 .clients__title {
   @extend %title;
-}
-.clients .container {
-  @extend %container;
 }
 .clients-list {
   display: flex;

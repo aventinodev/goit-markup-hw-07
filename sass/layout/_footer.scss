@@ -5,7 +5,6 @@
   background-color: $backgroundColor;
 }
 .footer .container {
-  @extend %container;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
