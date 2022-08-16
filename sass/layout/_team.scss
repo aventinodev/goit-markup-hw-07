@@ -34,31 +34,7 @@
   color: $primaryColor;
   margin-bottom: 16px;
 }
-.soc-icon-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.soc-icon-list__item {
-  @extend %flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: $whiteBackgroundColor;
-
-  transition: background-color $animation;
-}
-.team-block-title .soc-icon {
+.team-label-wrap .soc-list__icon {
   fill: $iconColor;
   transition: fill $animation;
-}
-
-.soc-icon-list__link:hover,
-.soc-icon-list__link:focus {
-  background-color: $accentColor;
-  color: $whiteColor;
-}
-.soc-icon-list__link:hover .soc-icon,
-.soc-icon-list__link:focus .soc-icon {
-  fill: currentColor;
 }

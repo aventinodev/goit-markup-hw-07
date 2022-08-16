@@ -1,0 +1,17 @@
+.soc-list {
+  @extend %soc-list;
+}
+
+.soc-list__link {
+  @extend %soc-list__link;
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    color: $whiteColor;
+  }
+
+  &:hover .soc-list__icon,
+  &:focus .soc-list__icon {
+    fill: currentColor;
+  }
+}
