@@ -1,0 +1,68 @@
+.team {
+  background-color: $backgroundColorAdd;
+  @extend %section;
+}
+.team .container {
+  @extend %container;
+}
+.team__title {
+  @extend %title;
+}
+.team-list {
+  display: flex;
+  column-gap: 30px;
+}
+.team-list__item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+
+  background-color: $whiteBackgroundColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.team-label-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-label-wrap__titel {
+  margin-bottom: 10px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-label-wrap__descr {
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.19;
+  color: $primaryColor;
+  margin-bottom: 16px;
+}
+.soc-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.soc-icon-list__item {
+  @extend %flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $whiteBackgroundColor;
+
+  transition: background-color $animation;
+}
+.team-block-title .soc-icon {
+  fill: $iconColor;
+  transition: fill $animation;
+}
+
+.soc-icon-list__link:hover,
+.soc-icon-list__link:focus {
+  background-color: $accentColor;
+  color: $whiteColor;
+}
+.soc-icon-list__link:hover .soc-icon,
+.soc-icon-list__link:focus .soc-icon {
+  fill: currentColor;
+}

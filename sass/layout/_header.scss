@@ -1,0 +1,11 @@
+.header {
+  border-bottom: 1px solid $borderColorHeader;
+}
+
+.header .container {
+  @extend %flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

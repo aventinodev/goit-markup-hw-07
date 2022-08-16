@@ -1,0 +1,13 @@
+//  функція переходу задана  вище для класу .soc-icon-link
+
+.footer-join .soc-icon-link {
+  background-color: $iconBackground;
+}
+.footer-join .soc-icon {
+  fill: $whiteColor;
+}
+.soc-icon-link.link.current,
+.footer-join .soc-icon-link:hover,
+.footer-join .soc-icon-link:focus {
+  background-color: $accentColor;
+}
