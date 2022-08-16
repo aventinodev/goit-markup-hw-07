@@ -2,80 +2,38 @@ body {
   font-family: 'roboto', sans-serif;
   color: $titleColor;
   background-color: $whiteBackgroundColor;
-  /*letter-spacing в макеті зустрічається три значення цієї 
-  властивості. Цей самий розповсюджений, тому я його внесла в body*/
   letter-spacing: 0.03em;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 .section {
   @extend %section;
 }
 .container {
   @extend %container;
 }
-// }
-// .link {
-//   text-decoration: none;
-//   cursor: pointer;
-// }
-// .list {
-//   list-style: none;
-// }
 
-// .logo {
-//   font-family: 'Raleway', sans-serif;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   color: $accentColor;
-// }
-.title {
-  @extend %title;
-}
 .visually-hidden {
   @extend %visuallyHidden;
 }
 
-// .btn {
-//   display: flex;
-//   text-align: center;
-//   justify-content: center;
+.btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  @include button($accentColor, none, 0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 
-//   border-radius: 4px;
-//   border: none;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
 
-//   font-family: inherit;
-//   font-size: 16px;
-
-//   cursor: pointer;
-// }
-.btn-submit {
   min-width: 200px;
   height: 50px;
 
-  background-color: $accentColor;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
   color: $whiteColor;
-
   transition: background-color $animation;
 }
-// .footer-wrapper__appeal {
-//   margin-bottom: 20px;
-
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   text-transform: uppercase;
-//   color: $whiteColor;
-// }
-// .footer-wrapper {
-//   margin-right: auto;
-// }

@@ -9,3 +9,20 @@
   align-items: baseline;
   justify-content: space-between;
 }
+.footer-contact {
+  flex-basis: 231px;
+  margin-right: 70px;
+}
+
+.footer-join {
+  margin-right: auto;
+}
+.footer__appeal {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $whiteColor;
+}

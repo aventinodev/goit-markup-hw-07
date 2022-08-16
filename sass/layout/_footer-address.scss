@@ -1,7 +1,3 @@
-.wrapper-contact {
-  flex-basis: 231px;
-  margin-right: 70px;
-}
 .address {
   font-style: normal;
 }
@@ -12,14 +8,16 @@
   color: $transparentWhiteColor;
   transition: color $animation;
 
+  &[href="https://goo.gl/maps/JHCXsqgSBJYCVwFo8"]
+  {
+    color: $whiteColor;
+  }
   &:hover,
   &:focus {
     color: $accentColor;
   }
 }
+
 .address-list__item:not(:last-child) {
   margin-bottom: 9px;
-}
-.address-List__link--address {
-  color: $whiteColor;
 }

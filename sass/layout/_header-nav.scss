@@ -22,11 +22,11 @@
   &:focus {
     color: $accentColor;
   }
-  .header-nav-list__link.current {
-    color: $accentColor;
-    cursor: pointer;
-    position: relative;
-  }
+}
+.header-nav-list__link.current {
+  color: $accentColor;
+  cursor: pointer;
+  position: relative;
 }
 .header-nav-list__link.current::after {
   content: '';
