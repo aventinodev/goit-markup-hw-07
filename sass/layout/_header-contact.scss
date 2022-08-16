@@ -1,6 +1,5 @@
 .header-contact-list {
   @extend %flex;
-  list-style: none;
 }
 
 .header-contact-list__item:not(:last-child) {
