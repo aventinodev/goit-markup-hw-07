@@ -2,7 +2,9 @@
   padding-top: 0;
 }
 .activities__title {
-  @extend %title;
+  @include font(36px, 700, 42px, 0.03em);
+  text-align: center;
+  margin-bottom: 50px;
 }
 .activities-list {
   display: flex;
