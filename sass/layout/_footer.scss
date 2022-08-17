@@ -3,18 +3,22 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $backgroundColor;
+
+  & .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .footer__logo {
+    margin: 0 0 20px;
+  }
 }
-.footer .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.footer-contact {
+.footer__contacts-add {
   flex-basis: 231px;
   margin-right: 70px;
 }
 
-.footer-join {
+.footer__social-up {
   margin-right: auto;
 }
 .footer__appeal {
