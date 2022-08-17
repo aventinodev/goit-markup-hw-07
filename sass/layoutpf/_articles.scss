@@ -12,15 +12,7 @@
   box-shadow: $boxShadowAtcl;
   transition: box-shadow $animation;
 }
-.projects-list__link:hover .thumb__descr,
-.projects-list__link:focus .thumb__descr {
-  transform: translateY(0%);
-}
-.projects-list__link:hover,
-.projects-list__link:focus {
-  box-shadow: $boxShadowAtcl;
-  transition: box-shadow $animation;
-}
+
 .thumb {
   position: relative;
   overflow: hidden;
@@ -41,7 +33,18 @@
   font-size: 18px;
   line-height: 1.56;
   color: $whiteColor;
+
+  .projects-list__link:hover &,
+  .projects-list__link:focus & {
+    transform: translateY(0%);
+  }
 }
+.projects-list__link:hover,
+.projects-list__link:focus {
+  box-shadow: $boxShadowAtcl;
+  transition: box-shadow $animation;
+}
+
 .projects-label-wrap {
   padding: 20px 24px;
   border: 1px solid $borderColorProjects;
