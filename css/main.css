@@ -708,7 +708,7 @@ body {
   fill: #2196f3;
 }
 
-.modal__descr {
+.modal__apeal {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -895,42 +895,42 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-policy_icon {
+.check-policy__icon {
   fill: transparent;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-policy:checked + .check-policy__label span {
+.check-policy__box:checked + .check-policy__label span {
   background-color: #2196f3;
   border-color: #2196f3;
 }
 
-.check-policy:hover + .check-policy__label span,
-.check-policy:focus + .check-policy__label span {
+.check-policy__box:hover + .check-policy__label span,
+.check-policy__box:focus + .check-policy__label span {
   border-color: #2196f3;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-policy:checked + .check-policy__label .check-policy__icon {
+.check-policy__box:checked + .check-policy__label .check-policy__icon {
   fill: #ffffff;
 }
 
-.check-policy:focus + .check-policy__label .check-policy__icon {
+.check-policy__box:focus + .check-policy__label .check-policy__icon {
   fill: #ffffff;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form .main-btn {
+.form .btn-main {
   margin: 0 auto;
   padding: 10px 52px;
   -webkit-transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form .main-btn:hover {
+.form .btn-main:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -58,7 +58,7 @@
 .modal-close:focus .icon-modal-close {
   fill: $accentColor;
 }
-.modal__descr {
+.modal__apeal {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -186,33 +186,33 @@
   margin-right: 7px;
   transition: background-color $animation, border-color $animation;
 }
-.check-policy_icon {
+.check-policy__icon {
   fill: transparent;
   transition: fill $animation;
 }
-.check-policy:checked + .check-policy__label span {
+.check-policy__box:checked + .check-policy__label span {
   background-color: $accentColor;
   border-color: $accentColor;
 }
-.check-policy:hover + .check-policy__label span,
-.check-policy:focus + .check-policy__label span {
+.check-policy__box:hover + .check-policy__label span,
+.check-policy__box:focus + .check-policy__label span {
   border-color: $accentColor;
   transition: border-color $animation;
 }
-.check-policy:checked + .check-policy__label .check-policy__icon {
+.check-policy__box:checked + .check-policy__label .check-policy__icon {
   fill: $whiteColor;
 }
-.check-policy:focus + .check-policy__label .check-policy__icon {
+.check-policy__box:focus + .check-policy__label .check-policy__icon {
   fill: $whiteColor;
   transition: fill $animation;
 }
 
-.form .main-btn {
+.form .btn-main {
   margin: 0 auto;
   padding: 10px 52px;
   transition: text-shadow $animation;
 }
-.form .main-btn:hover {
+.form .btn-main:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: text-shadow $animation;
 }
