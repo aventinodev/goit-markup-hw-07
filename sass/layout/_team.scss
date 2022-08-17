@@ -1,22 +1,23 @@
 .team {
   background-color: $backgroundColorAdd;
 }
-.team__title {
-  @extend %title;
-}
+
 .team-list {
   display: flex;
   column-gap: 30px;
 }
 .team-list__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-
   background-color: $whiteBackgroundColor;
   box-shadow: $boxShadowTms;
 }
 .team-label-wrap {
   padding-top: 30px;
   padding-bottom: 30px;
+  .team-label-wrap .soc-list__icon {
+    fill: $iconColor;
+    transition: fill $animation;
+  }
 }
 .team-label-wrap__title {
   margin-bottom: 10px;
@@ -35,7 +36,7 @@
   // line-height: 1.19;
   color: $primaryColor;
 }
-.team-label-wrap .soc-list__icon {
+.team-label-wrap .social__icon {
   fill: $iconColor;
   transition: fill $animation;
 }
