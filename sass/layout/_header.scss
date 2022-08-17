@@ -1,12 +1,19 @@
 .header {
   border-bottom: 1px solid $borderColorHeader;
-}
 
-.header .container {
-  display: flex;
-  align-items: center;
-}
-.header-nav {
-  margin-left: 0;
-  margin-right: auto;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &__logo {
+    margin-right: 93px;
+    margin-left: 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
