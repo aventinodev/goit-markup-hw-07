@@ -1,17 +1,17 @@
 .features__title {
   @extend %visuallyHidden;
 }
-.features-list {
+.features__list {
   display: flex;
   justify-content: center;
 }
-.features-list__item {
+.features__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.features-icon {
+.features__icon {
   @extend %flex;
   margin-bottom: 30px;
 
