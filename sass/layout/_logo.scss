@@ -9,19 +9,10 @@
   // line-height: 1.19;
   color: $accentColor;
 }
-.logo__header {
+.logo--dark {
   color: $blackColor;
 }
 
-.header .logo {
-  margin-right: 93px;
-  margin-left: 0;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-.logo__footer {
+.logo--light {
   color: $whiteColor;
-}
-.footer .logo {
-  margin: 0 0 20px;
 }
