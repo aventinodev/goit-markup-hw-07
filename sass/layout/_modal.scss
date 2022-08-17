@@ -51,27 +51,27 @@
   color: $blackColor;
   background-color: $whiteBackgroundColor;
 }
-.icon-modal-close {
+.modal-close__icon {
   fill: $blackColor;
 }
 .modal-close:hover .icon-modal-close,
 .modal-close:focus .icon-modal-close {
   fill: $accentColor;
 }
-.modal-descr {
+.modal__descr {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
 }
-.wrapper-field {
+.wrapper-form-field {
   margin-bottom: 20px;
 }
 .form-field:not(:last-child) {
   margin-bottom: 10px;
 }
-.field-label {
+.form-field__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -81,7 +81,7 @@
 .wrapper {
   position: relative;
 }
-.field-input {
+.form-field__input {
   width: 100%;
   height: 40px;
   padding: 12px 42px;
@@ -96,7 +96,7 @@
   color: $primaryColor;
 }
 
-.icon-modal {
+.form-field__icon {
   position: absolute;
   top: 50%;
   left: 2.67%;
@@ -105,7 +105,7 @@
   fill: $titleColor;
   transition: fill $animation;
 }
-.comment {
+.form-field__comment {
   width: 100%;
   height: 120px;
   resize: none;
@@ -120,44 +120,44 @@
   color: $primaryColor;
   transition: border-color $animation;
 }
-.comment::placeholder {
+.form-field__comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: $transparentGreyColor;
 }
-.field-input:hover,
-.field-input:focus,
-.comment:hover,
-.comment:focus {
+.form-field__input:hover,
+.form-field__input:focus,
+.form-field__comment:hover,
+.form-field__comment:focus {
   border-color: $accentColor;
   cursor: pointer;
   transition: border-color $animation;
 }
-.field-input:hover + .icon-modal,
-.field-input:focus + .icon-modal {
+.form-field__input:hover + .form-field__icon,
+.form-field__input:focus + .form-field__icon {
   fill: $accentColor;
   transition: fill $animation;
 }
 
-.form-field-policy {
+.check-policy {
   margin-bottom: 30px;
 }
-.policy {
+.check-policy {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.policy-terms {
+.check-policy__terms {
   position: relative;
   display: block;
   margin-left: 9px;
   color: $accentColor;
 }
 
-.policy-terms::after {
+.check-policy__terms::after {
   content: '';
   position: absolute;
   top: 100%;
@@ -168,14 +168,14 @@
 }
 /* --кастомний чекбокс через свг */
 
-.policy-label {
+.check-policy__label {
   display: flex;
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: $primaryColor;
 }
-.policy-label span {
+.check-policy__label span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,32 +186,33 @@
   margin-right: 7px;
   transition: background-color $animation, border-color $animation;
 }
-.icon-check {
+.check-policy_icon {
   fill: transparent;
   transition: fill $animation;
 }
-.policy-check:checked + .policy-label span {
-  // @include button($accentColor, $accentColor);
+.check-policy:checked + .check-policy__label span {
+  background-color: $accentColor;
+  border-color: $accentColor;
 }
-.policy-check:hover + .policy-label span,
-.policy-check:focus + .policy-label span {
+.check-policy:hover + .check-policy__label span,
+.check-policy:focus + .check-policy__label span {
   border-color: $accentColor;
   transition: border-color $animation;
 }
-.policy-check:checked + .policy-label .icon-check {
+.check-policy:checked + .check-policy__label .check-policy__icon {
   fill: $whiteColor;
 }
-.policy-check:focus + .policy-label .icon-check {
+.check-policy:focus + .check-policy__label .check-policy__icon {
   fill: $whiteColor;
   transition: fill $animation;
 }
 
-.form .btn-submit {
+.form .main-btn {
   margin: 0 auto;
   padding: 10px 52px;
   transition: text-shadow $animation;
 }
-.form .btn-submit:hover {
+.form .main-btn:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: text-shadow $animation;
 }

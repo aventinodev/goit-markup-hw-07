@@ -114,23 +114,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 4px;
-  border: none;
-  font-family: inherit;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .features__title, .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -619,7 +602,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.btn-submit {
+.btn-main {
   min-width: 200px;
   height: 50px;
   font-weight: 700;
@@ -631,12 +614,6 @@ body {
 }
 
 .footer-form__btn {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 10px;
   padding: 10px 28px;
 }
@@ -722,7 +699,7 @@ body {
   background-color: #ffffff;
 }
 
-.icon-modal-close {
+.modal-close__icon {
   fill: #000000;
 }
 
@@ -731,7 +708,7 @@ body {
   fill: #2196f3;
 }
 
-.modal-descr {
+.modal__descr {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -739,7 +716,7 @@ body {
   margin-bottom: 12px;
 }
 
-.wrapper-field {
+.wrapper-form-field {
   margin-bottom: 20px;
 }
 
@@ -747,7 +724,7 @@ body {
   margin-bottom: 10px;
 }
 
-.field-label {
+.form-field__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -759,7 +736,7 @@ body {
   position: relative;
 }
 
-.field-input {
+.form-field__input {
   width: 100%;
   height: 40px;
   padding: 12px 42px;
@@ -773,7 +750,7 @@ body {
   color: #757575;
 }
 
-.icon-modal {
+.form-field__icon {
   position: absolute;
   top: 50%;
   left: 2.67%;
@@ -784,7 +761,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment {
+.form-field__comment {
   width: 100%;
   height: 120px;
   resize: none;
@@ -799,63 +776,63 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment::-webkit-input-placeholder {
+.form-field__comment::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment::-moz-placeholder {
+.form-field__comment::-moz-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment:-ms-input-placeholder {
+.form-field__comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment::-ms-input-placeholder {
+.form-field__comment::-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment::placeholder {
+.form-field__comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.field-input:hover,
-.field-input:focus,
-.comment:hover,
-.comment:focus {
+.form-field__input:hover,
+.form-field__input:focus,
+.form-field__comment:hover,
+.form-field__comment:focus {
   border-color: #2196f3;
   cursor: pointer;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.field-input:hover + .icon-modal,
-.field-input:focus + .icon-modal {
+.form-field__input:hover + .form-field__icon,
+.form-field__input:focus + .form-field__icon {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field-policy {
+.check-policy {
   margin-bottom: 30px;
 }
 
-.policy {
+.check-policy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,14 +845,14 @@ body {
   margin-bottom: 30px;
 }
 
-.policy-terms {
+.check-policy__terms {
   position: relative;
   display: block;
   margin-left: 9px;
   color: #2196f3;
 }
 
-.policy-terms::after {
+.check-policy__terms::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -887,7 +864,7 @@ body {
 }
 
 /* --кастомний чекбокс через свг */
-.policy-label {
+.check-policy__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -899,7 +876,7 @@ body {
   color: #757575;
 }
 
-.policy-label span {
+.check-policy__label span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -918,37 +895,42 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-check {
+.check-policy_icon {
   fill: transparent;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.policy-check:hover + .policy-label span,
-.policy-check:focus + .policy-label span {
+.check-policy:checked + .check-policy__label span {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.check-policy:hover + .check-policy__label span,
+.check-policy:focus + .check-policy__label span {
   border-color: #2196f3;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.policy-check:checked + .policy-label .icon-check {
+.check-policy:checked + .check-policy__label .check-policy__icon {
   fill: #ffffff;
 }
 
-.policy-check:focus + .policy-label .icon-check {
+.check-policy:focus + .check-policy__label .check-policy__icon {
   fill: #ffffff;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form .btn-submit {
+.form .main-btn {
   margin: 0 auto;
   padding: 10px 52px;
   -webkit-transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form .btn-submit:hover {
+.form .main-btn:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

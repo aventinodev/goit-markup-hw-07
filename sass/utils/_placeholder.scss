@@ -31,18 +31,6 @@
 
   transition: background-color $animation;
 }
-%btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  border: none;
-
-  font-family: inherit;
-  font-size: 16px;
-
-  cursor: pointer;
-}
 
 %visuallyHidden {
   position: absolute;
