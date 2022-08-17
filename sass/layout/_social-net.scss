@@ -1,0 +1,15 @@
+.social-net .social__link {
+  background-color: $iconBackground;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    transition: background-color $animation;
+  }
+}
+.social-net .social__icon {
+  fill: $whiteColor;
+}
+.social__link.current {
+  background-color: $accentColor;
+}
