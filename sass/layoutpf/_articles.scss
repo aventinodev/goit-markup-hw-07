@@ -11,6 +11,10 @@
   display: block;
   box-shadow: $boxShadowAtcl;
   transition: box-shadow $animation;
+  &:hover,
+  &:focus {
+    box-shadow: $boxShadowAtcl;
+  }
 }
 
 .thumb {
@@ -38,11 +42,6 @@
   .projects-list__link:focus & {
     transform: translateY(0%);
   }
-}
-.projects-list__link:hover,
-.projects-list__link:focus {
-  box-shadow: $boxShadowAtcl;
-  transition: box-shadow $animation;
 }
 
 .projects-label-wrap {
