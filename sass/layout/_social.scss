@@ -1,17 +1,17 @@
-.soc-list {
-  @extend %soc-list;
+.social {
+  @extend %social;
 }
 
-.soc-list__link {
-  @extend %soc-list__link;
+.social__link {
+  @extend %sociallink;
   &:hover,
   &:focus {
     background-color: $accentColor;
     color: $whiteColor;
   }
 
-  &:hover .soc-list__icon,
-  &:focus .soc-list__icon {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: currentColor;
   }
 }
