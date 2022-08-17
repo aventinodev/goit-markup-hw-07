@@ -1,0 +1,22 @@
+.address {
+  font-style: normal;
+}
+.address__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $transparentWhiteColor;
+  transition: color $animation;
+
+  &.address__link--post {
+    color: $whiteColor;
+  }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
