@@ -4,11 +4,11 @@
 }
 .filter-list__item {
   margin-bottom: 50px;
-}
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
 
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
 .filter__btn {
   min-width: 73px;
   height: auto;
