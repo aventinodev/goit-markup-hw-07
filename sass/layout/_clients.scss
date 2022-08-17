@@ -1,16 +1,13 @@
-.clients__title {
-  @extend %title;
-}
-.clients-list {
+.clients__list {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.clients-list__item {
+.clients__item {
   flex-basis: calc((100% - 5 * 30px) / 6);
   height: 92px;
 }
-.clients-list__link {
+.clients__link {
   @extend %flex;
   width: 100%;
   height: 100%;
@@ -24,7 +21,14 @@
     border-color: $accentColor;
     color: $accentColor;
   }
-  .clients-list__icon {
+}
+.clients__icon {
+  fill: currentColor;
+  transition: fill $animation;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
     fill: currentColor;
+    transition: fill $animation;
   }
 }
