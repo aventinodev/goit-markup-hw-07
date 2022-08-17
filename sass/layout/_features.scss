@@ -1,8 +1,3 @@
-.features {
-}
-.features .container {
-}
-
 .features__title {
   @extend %visuallyHidden;
 }
@@ -18,21 +13,24 @@
 }
 .features-icon {
   @extend %flex;
+  margin-bottom: 30px;
+
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
-  background-color: $backgroundColorAdd;
   border-radius: 4px;
+
+  background-color: $backgroundColorAdd;
 }
 .features__subtitle {
   margin-bottom: 10px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 16px, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
   text-transform: uppercase;
 }
 .features__descr {
+  @include font(14px, 400, 16px, 0.03em);
   font-size: 14px;
   line-height: 1.71;
   color: $primaryColor;

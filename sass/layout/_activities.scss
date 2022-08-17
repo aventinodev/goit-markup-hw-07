@@ -24,9 +24,10 @@
   background-color: $backgroundColor;
 }
 .activities-wrapper__label {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 16px, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
   text-align: center;
 
   text-transform: uppercase;

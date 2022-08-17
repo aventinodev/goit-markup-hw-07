@@ -23,13 +23,14 @@
   box-shadow: $boxShadowFltr;
 
   transition: background-color $animation, color $animation, box-shadow 250ms $animation;
-}
-.filter__btn:hover,
-.filter__btn:focus {
-  color: $whiteColor;
-  background-color: $accentColor;
-  box-shadow: $boxShadowFltr;
-  transition: background-color $animation, color $animation, box-shadow 250ms $animation;
+
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+    background-color: $accentColor;
+    box-shadow: $boxShadowFltr;
+    transition: background-color $animation, color $animation, box-shadow 250ms $animation;
+  }
 }
 .current-btn {
   color: $whiteColor;

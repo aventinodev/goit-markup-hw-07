@@ -19,6 +19,7 @@
 .projects-list__link:hover,
 .projects-list__link:focus {
   box-shadow: $boxShadowAtcl;
+  transition: box-shadow $animation;
 }
 .thumb {
   position: relative;

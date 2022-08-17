@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $backgroundColorAdd;
   opacity: 1;
   transition: opacity $animation, visibility $animation;
 }
@@ -26,8 +26,7 @@
   height: 581px;
   border-radius: 4px;
   background-color: $whiteBackgroundColor;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: $boxShadowMod;
 }
 
 .backdrop.is-hidden .modal {
@@ -39,29 +38,28 @@
   top: 8px;
   right: 8px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
 
   width: 30px;
   height: 30px;
   border-radius: 50%;
   padding: 0;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid $borderColorAdd;
   color: $blackColor;
   background-color: $whiteBackgroundColor;
 }
 .modal-close__icon {
   fill: $blackColor;
 }
-.modal-close:hover .icon-modal-close,
-.modal-close:focus .icon-modal-close {
+.modal-close:hover .modal-close__icon,
+.modal-close:focus .modal-close__icon {
   fill: $accentColor;
 }
-.modal__apeal {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+.modal__appeal {
+  @include font(20px, 700, 23px, 0.03em);
+  // font-weight: 700;
+  // font-size: 20px;
+  // line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -73,9 +71,10 @@
 }
 .form-field__label {
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(12px, 400, 14px, 0.01em);
+  // font-size: 12px;
+  // line-height: 1.17;
+  // letter-spacing: 0.01em;
   color: $primaryColor;
 }
 .wrapper {
@@ -90,9 +89,10 @@
   border-radius: 4px;
   transition: border-color $animation;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(12px, 400, 14px, 0.01em);
+  // font-size: 12px;
+  // line-height: 1.17;
+  // letter-spacing: 0.01em;
   color: $primaryColor;
 }
 
@@ -111,20 +111,23 @@
   resize: none;
   padding: 12px 16px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $borderColorInput;
   border-radius: 4px;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(12px, 400, 14px, 0.01em);
+  //  font-size: 12px;
+  // line-height: 1.17;
+  // letter-spacing: 0.01em;
   color: $primaryColor;
   transition: border-color $animation;
-}
-.form-field__comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: $transparentGreyColor;
+
+  &::placeholder {
+    @include font(12px, 400, 14px, 0.01em);
+    // font-size: 12px;
+    // line-height: 1.17;
+    // letter-spacing: 0.01em;
+    color: $transparentGreyColor;
+  }
 }
 .form-field__input:hover,
 .form-field__input:focus,
@@ -142,8 +145,7 @@
 
 .check-policy {
   margin-bottom: 30px;
-}
-.check-policy {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,7 +168,6 @@
   width: 100%;
   border-bottom: 1px solid $accentColor;
 }
-/* --кастомний чекбокс через свг */
 
 .check-policy__label {
   display: flex;
@@ -175,7 +176,7 @@
   line-height: 1.71;
   color: $primaryColor;
 }
-.check-policy__label span {
+.check-policy__label .check-policy__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,12 +191,12 @@
   fill: transparent;
   transition: fill $animation;
 }
-.check-policy__box:checked + .check-policy__label span {
+.check-policy__box:checked + .check-policy__label .check-policy__icon {
   background-color: $accentColor;
   border-color: $accentColor;
 }
-.check-policy__box:hover + .check-policy__label span,
-.check-policy__box:focus + .check-policy__label span {
+.check-policy__box:hover + .check-policy__label .check-policy__icon,
+.check-policy__box:focus + .check-policy__label .check-policy__icon {
   border-color: $accentColor;
   transition: border-color $animation;
 }
@@ -213,6 +214,6 @@
   transition: text-shadow $animation;
 }
 .form .btn-main:hover {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-shadow: $boxShadowButton;
   transition: text-shadow $animation;
 }

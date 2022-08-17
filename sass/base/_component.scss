@@ -17,9 +17,7 @@ body {
 }
 
 .btn {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  @extend %flex;
 
   transition: background-color $animation;
   border-radius: 4px;
@@ -33,9 +31,6 @@ body {
   height: 50px;
 
   color: $whiteColor;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   background-color: $accentColor;
   box-shadow: $boxShadowButton;
 }

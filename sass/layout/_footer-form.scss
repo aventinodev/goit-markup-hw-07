@@ -14,18 +14,18 @@
   background-color: transparent;
   box-shadow: $boxShadowButton;
 
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
   color: $whiteColor;
-}
-.footer-form__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
 
-  color: $transparentWhiteColor;
+  @include font(16px, 400, 20px, 0.03em);
+
+  // font-size: 16px;
+  // line-height: 1.25;
+  // letter-spacing: 0.03em;
+
+  &::placeholder {
+    @include font(16px, 400, 20px, 0.03em);
+    color: $transparentWhiteColor;
+  }
 }
 
 .btn-main {
@@ -44,12 +44,13 @@
 .footer-form__btn {
   gap: 10px;
   padding: 10px 28px;
+
+  &:hover,
+  &:focus {
+    background-color: $accentСolorBtn;
+    transition: background-color $animation;
+  }
 }
-.icon-send {
+.footer-form__icon {
   fill: $whiteColor;
-}
-.btn-submit:hover,
-.btn-submit:focus {
-  background-color: $accentСolorBtn;
-  transition: background-color $animation;
 }
