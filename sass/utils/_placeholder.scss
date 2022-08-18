@@ -15,12 +15,12 @@
   align-items: center;
   justify-content: center;
 }
-%soc-list {
+%social {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-%soc-list__link {
+%sociallink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
   border-radius: 50%;
   background-color: $whiteBackgroundColor;
 
-  transition: background-color $animation;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 %visuallyHidden {
@@ -50,9 +50,9 @@
   text-align: center;
   margin-bottom: 50px;
 }
-%headerList {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color $animation;
-}
+// %headerList {
+//   display: block;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
