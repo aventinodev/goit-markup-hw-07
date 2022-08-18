@@ -16,21 +16,21 @@ body {
   @extend %visuallyHidden;
 }
 
-.btn {
+.btn-main {
   @extend %flex;
+  min-width: 200px;
+  height: 50px;
 
   transition: background-color $animation;
   border-radius: 4px;
   border: none;
   font-family: inherit;
-  cursor: pointer;
-}
-
-.btn-main {
-  min-width: 200px;
-  height: 50px;
 
   color: $whiteColor;
   background-color: $accentColor;
-  box-shadow: $boxShadowButton;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
