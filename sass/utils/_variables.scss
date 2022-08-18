@@ -20,7 +20,7 @@ $backgroundColorThumb: rgba(33, 150, 243, 0.9);
 $backgroundColorBdr: rgba(0, 0, 0, 0.5);
 
 $borderColorHeader: #ececec;
-$borderColorProjects: #eeeeee;
+$borderColorPf: #eeeeee;
 
 $iconColor: #afb1b8;
 
@@ -31,14 +31,14 @@ $borderColorAdd: rgba(0, 0, 0, 0.1);
 $borderColorInput: rgba(33, 33, 33, 0.2);
 
 $boxShadowButton: 0px 4px 4px rgba(0, 0, 0, 0.15);
-$boxShadowAtcl: 0px 0px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px rgba(0, 0, 0, 0.06),
-  0px 0px 0px rgba(0, 0, 0, 0.16);
+$boxShadowCard: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 $boxShadowFltr: 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.08),
   0px 0px 0px rgba(0, 0, 0, 0.12);
-$boxShadowTms: l0px 4px 4px rgba(0, 0, 0, 0.25);
-$boxShadowMod: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+$boxShadowTms: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
 
+$lG: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 $animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $animationModal: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 $animationDelay: 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
