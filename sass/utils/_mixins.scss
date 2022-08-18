@@ -24,7 +24,7 @@
 // .avatar
 //   @include square(100px, $radius: 4px)
 
-@mixin font($fs: false, $fw: 400, $lh: false, $ls: 0.03em) {
+@mixin font($fs: false, $fw: false, $lh: false, $ls: false) {
   @if $fs {
     font-size: $fs;
   }
@@ -38,18 +38,12 @@
     letter-spacing: $ls;
   }
 }
-// font header-nav,  header-contact
-// @include font(14px, 500, 16px, 0.02em);
+// font header-nav,  header-contact     // @include font(14px, 500, 16px, 0.02em);
 
-// btn-main
-//  @include font(16px, 700, 30px, 0.06em);
+// btn-main        //  @include font(16px, 700, 30px, 0.06em);
 
-//  featers__subtitel
-// fotter__appeal
-// @include font(14px, 700, 16px, 0.03em);
-// featers__descr
-//  @include font(14px, 400, 16px, 0.03em);
-// team-label-wrap__title
-// @include font(16px, 500, 19px, 0.03em);
-// team-label-wrap__descr
-//  @include font(16px, 400, 19px, 0.03em);
+//  featers__subtitel,   fotter__appeal        // @include font(14px, 700, 16px, 0.03em);
+// featers__descr             // @include font(14px, 400, 16px, 0.03em);
+// team-label-wrap__title    // @include font(16px, 500, 19px, 0.03em);
+// team-label-wrap__descr    //  @include font(16px, 400, 19px, 0.03em);
+// title                    // @include font(36px, 700, 42px, 0.03em);
