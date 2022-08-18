@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   min-height: 100%;
-  background-color: $backgroundColorAdd;
+  background-color: $backgroundColorBdr;
   opacity: 1;
   transition: opacity $animation, visibility $animation;
 }
@@ -14,30 +14,32 @@
   pointer-events: none;
   transition: opacity $animationDelay, visibility $animationDelay;
 }
-
-.modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+}
+.modal {
   transition: transform $animationModal;
   padding: 40px 40px;
   width: 528px;
   height: 581px;
   border-radius: 4px;
   background-color: $whiteBackgroundColor;
-  box-shadow: $boxShadowMod;
-}
+  box-shadow: $boxShadowTms;
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform $animationModal;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform $animationModal;
+  }
 }
-.modal-close {
+.modal__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
-
+}
+.btn-close {
   @extend %flex;
 
   width: 30px;
@@ -48,12 +50,13 @@
   color: $blackColor;
   background-color: $whiteBackgroundColor;
 }
-.modal-close__icon {
+.btn-close__icon {
   fill: $blackColor;
-}
-.modal-close:hover .modal-close__icon,
-.modal-close:focus .modal-close__icon {
-  fill: $accentColor;
+
+  .btn-close:hover &,
+  .btn-close:focus & {
+    fill: $accentColor;
+  }
 }
 .modal__appeal {
   @include font(20px, 700, 23px, 0.03em);
@@ -63,13 +66,13 @@
   text-align: center;
   margin-bottom: 12px;
 }
-.wrapper-form-field {
+.form__fields {
   margin-bottom: 20px;
 }
-.form-field:not(:last-child) {
+.fields__users-data:not(:last-child) {
   margin-bottom: 10px;
 }
-.form-field__label {
+.users-data__label {
   margin-bottom: 4px;
   @include font(12px, 400, 14px, 0.01em);
   // font-size: 12px;
@@ -77,10 +80,10 @@
   // letter-spacing: 0.01em;
   color: $primaryColor;
 }
-.wrapper {
+.users-data__wrapper {
   position: relative;
 }
-.form-field__input {
+.users-data__input {
   width: 100%;
   height: 40px;
   padding: 12px 42px;
@@ -96,7 +99,7 @@
   color: $primaryColor;
 }
 
-.form-field__icon {
+.users-data__icon {
   position: absolute;
   top: 50%;
   left: 2.67%;
@@ -105,7 +108,7 @@
   fill: $titleColor;
   transition: fill $animation;
 }
-.form-field__comment {
+.users-data__comment {
   width: 100%;
   height: 120px;
   resize: none;
@@ -129,91 +132,92 @@
     color: $transparentGreyColor;
   }
 }
-.form-field__input:hover,
-.form-field__input:focus,
-.form-field__comment:hover,
-.form-field__comment:focus {
+.users-data__input:hover,
+.users-data__input:focus,
+.users-data__comment:hover,
+.users-data__comment:focus {
   border-color: $accentColor;
   cursor: pointer;
   transition: border-color $animation;
 }
-.form-field__input:hover + .form-field__icon,
-.form-field__input:focus + .form-field__icon {
+.users-data__input:hover + .users-data__icon,
+.users-data__input:focus + .users-data__icon {
   fill: $accentColor;
   transition: fill $animation;
 }
 
-.check-policy {
+.form__policy {
   margin-bottom: 30px;
-
+}
+.policy {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.check-policy__terms {
+.policy__terms {
   position: relative;
   display: block;
   margin-left: 9px;
   color: $accentColor;
-}
 
-.check-policy__terms::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform: translateY(-5px);
-  width: 100%;
-  border-bottom: 1px solid $accentColor;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-5px);
+    width: 100%;
+    border-bottom: 1px solid $accentColor;
+  }
 }
-
-.check-policy__label {
+.policy__label {
   display: flex;
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: $primaryColor;
+
+  & .policy__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $titleColor;
+    border-radius: 2px;
+    margin-right: 7px;
+    transition: background-color $animation, border-color $animation;
+  }
 }
-.check-policy__label .check-policy__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 15px;
-  border: 2px solid $titleColor;
-  border-radius: 2px;
-  margin-right: 7px;
-  transition: background-color $animation, border-color $animation;
-}
-.check-policy__icon {
+.policy__icon {
   fill: transparent;
   transition: fill $animation;
 }
-.check-policy__box:checked + .check-policy__label .check-policy__icon {
+.policy__checkbox:checked + .policy__label .policy__icon {
   background-color: $accentColor;
   border-color: $accentColor;
 }
-.check-policy__box:hover + .check-policy__label .check-policy__icon,
-.check-policy__box:focus + .check-policy__label .check-policy__icon {
+.policy__checkbox:hover + .policy__label .policy__icon,
+.policy__checkbox:focus + .policy__label .policy__icon {
   border-color: $accentColor;
   transition: border-color $animation;
 }
-.check-policy__box:checked + .check-policy__label .check-policy__icon {
+.policy__checkbox:checked + .policy__label .policy__icon {
   fill: $whiteColor;
 }
-.check-policy__box:focus + .check-policy__label .check-policy__icon {
+.policy__checkbox:focus + .policy__label .policy__icon {
   fill: $whiteColor;
   transition: fill $animation;
 }
 
-.form .btn-main {
+.form__btn-main {
   margin: 0 auto;
   padding: 10px 52px;
   transition: text-shadow $animation;
 }
-.form .btn-main:hover {
-  text-shadow: $boxShadowButton;
+.form__btn-main:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: text-shadow $animation;
 }
