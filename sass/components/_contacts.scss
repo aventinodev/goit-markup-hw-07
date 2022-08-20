@@ -1,0 +1,56 @@
+.contact {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 9px;
+}
+.contact__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.contact__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $transparentWhiteColor;
+  // transition: color $animation;
+  @include animation(color, null, null, $time, $func, null);
+
+  &--post {
+    color: $whiteColor;
+  }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+// =====HEADER======
+.contact--header {
+  @extend %flex;
+  gap: 50px;
+}
+
+// .contact__item--header:not(:last-child) {
+// margin-right: 50px;
+// }
+.contact__link--header {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include font(14px, 500, 16px, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  color: $primaryColor;
+  @include animation(color, null, null, $time, $func, null);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
