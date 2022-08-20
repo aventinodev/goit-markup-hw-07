@@ -1,11 +1,6 @@
 .header {
   border-bottom: 1px solid $borderColorHeader;
 
-  & .container {
-    display: flex;
-    align-items: center;
-  }
-
   &__navigation {
     margin-left: 0;
     margin-right: auto;
