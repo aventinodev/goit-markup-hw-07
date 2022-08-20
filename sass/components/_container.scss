@@ -1,0 +1,16 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container--header {
+  @include flex($jc: null);
+}
+
+.container--hero {
+  max-width: 696px;
+}
+.container--footer {
+  @include flex($ai: baseline, $jc: null);
+}
