@@ -1,0 +1,27 @@
+.subscribe__form {
+  @include flex();
+  gap: 12px;
+}
+
+.subscribe__field {
+  min-width: 358px;
+  height: 50px;
+  padding: 12px 16px;
+  border: 1px solid $borderColor;
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: $boxShadowButton;
+
+  color: $whiteColor;
+
+  @include font(16px, 400, 20px, 0.03em);
+
+  // font-size: 16px;
+  // line-height: 1.25;
+  // letter-spacing: 0.03em;
+
+  &::placeholder {
+    @include font(16px, 400, 20px, 0.03em);
+    color: $transparentWhiteColor;
+  }
+}

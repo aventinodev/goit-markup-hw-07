@@ -1,20 +1,17 @@
-// @mixin button($bgclr, $bdr, $shdw) {
-//   $bgclr background-color;
-//   $bdr border-color;
-//   ;shdw box-shadow ;
-// }
+@mixin button($color, $bgc, $shdw) {
+  color: $color;
+  background-color: $bgc;
+  box-shadow: $shdw;
+}
 
-// @mixin flex($dsp, $ai: , $jc: false) {
-//   @if $dsp {
-//     display: $dsp;
-//   }
-//   @if $ai {
-//     align-items: $ai;
-//   }
-//   @if $jc {
-//     justify-content: $jc;
-//   }
-// }
+@mixin flex($dsp: flex, $fd: row, $ai: center, $jc: center, $gp: null) {
+  display: $dsp;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gp;
+}
+
 // @mixin square($size, $radius: 0)
 //   width: $size
 //   height: $size
@@ -37,6 +34,13 @@
   @if $ls {
     letter-spacing: $ls;
   }
+}
+
+@mixin animation($one, $two, $three, $time, $func, $del) {
+  transition-property: $one, $two, $three;
+  transition-duration: $time;
+  transition-timing-function: $func;
+  transition-delay: $del;
 }
 // font header-nav,  header-contact     // @include font(14px, 500, 16px, 0.02em);
 

@@ -1,11 +1,12 @@
 .contact {
+  @include flex($fd: column, $ai: null, $jc: null, $gp: 9px);
   // display: flex;
   // flex-direction: column;
   // gap: 9px;
 }
-.contact__item:not(:last-child) {
-  margin-bottom: 9px;
-}
+// .contact__item:not(:last-child) {
+//   margin-bottom: 9px;
+
 .contact__link {
   font-size: 14px;
   line-height: 1.71;
@@ -24,8 +25,7 @@
 }
 // =====HEADER======
 .contact--header {
-  @extend %flex;
-  gap: 50px;
+  @include flex($gp: 50px);
 }
 
 // .contact__item--header:not(:last-child) {

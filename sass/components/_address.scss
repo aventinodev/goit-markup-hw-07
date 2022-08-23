@@ -1,0 +1,22 @@
+.address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $transparentWhiteColor;
+  // transition: color $animation;
+  @include animation(color, null, null, $time, $func, null);
+
+  &--post {
+    color: $whiteColor;
+  }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}

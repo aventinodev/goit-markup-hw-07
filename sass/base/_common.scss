@@ -1,0 +1,14 @@
+body {
+  font-family: 'roboto', sans-serif;
+  color: $titleColor;
+  background-color: $whiteBackgroundColor;
+  letter-spacing: 0.03em;
+}
+
+.section {
+  @extend %section;
+}
+
+.visually-hidden {
+  @extend %visuallyHidden;
+}

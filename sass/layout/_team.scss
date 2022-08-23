@@ -8,7 +8,7 @@
 }
 
 .team-list {
-  display: flex;
+  @include flex($ai: null, $jc: null);
   column-gap: 30px;
 }
 .team-list__item {
